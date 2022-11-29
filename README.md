@@ -21,9 +21,9 @@ Use Terraform to provision infrastructure on AWS
     * ```$ git clone https://github.com/wardviaene/devops-box.git``` (this will have things to install Ansible & Terraform)<br>
     * ```$ cd devops-box/```<br>
     *  ```$ cd scripts```<br>
-    * ```$ chmod u+x install.sh```(to add permissions)<br>
+    * ```$ chmod u+x install.sh``` (to add permissions)<br>
     * ```$ sudo ./install.sh```<br>
-    * ```$ terraform version```(to check wether it is installed correctly)<br>
+    * ```$ terraform version``` (to check wether it is installed correctly)<br>
 
 ## Terraform HCL
 HashiCorp Confiuration Language - Understanding the terraform syntax<br>
@@ -39,8 +39,8 @@ variable "myvar"{
 ```
 <br><br>
 ```$ terraform console```<br>
-```> var.myvar```(it'll print hello terraform)<br> 
-```> ${var.myvar}```(it'll print hello terraform)<br>
+```> var.myvar``` (it'll print hello terraform)<br> 
+```> ${var.myvar}``` (it'll print hello terraform)<br>
 
 
           
