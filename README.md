@@ -28,7 +28,7 @@ Use Terraform to provision infrastructure on AWS
 
 ## Terraform HCL
 HashiCorp Confiuration Language - Understanding the terraform syntax<br>
-We'll create & run our first ```.tf``` easily:
+We'll create & run our first ```.tf``` easily:<br>
 ```$ mkdir terraform-test```<br>
 ```$ cd terraform-test```<br>
 ```$ touch main.tf ```<br>
