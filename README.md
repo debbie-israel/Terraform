@@ -38,24 +38,20 @@ variable "myvar"{
   type=string
   default="hello terraform"
 }
-```
-<br><br>
-```$ terraform console```<br>
-```> var.myvar``` (it'll print "hello terraform")<br> 
-
-```
-variable "myvar"{
-  type=string
-  default="hello terraform"
-}
 
 variable "mymap"{
   type=map[string]
   default={
     mykey = "my value"
+  }
 }
 ```
 <br><br>
+```$ terraform console```<br>
+```> var.myvar``` (it'll print "hello terraform")<br> 
+```> var.mymap``` (it'll print tomap({"mykey" = "my value"}))<br> 
+
+
 
           
 
