@@ -1,9 +1,9 @@
 # Terraform
 Use Terraform to provision infrastructure on AWS
-
-## What is Terraform?
 <!--<img src="src/assets/img/terraform-registry.gif" width="44%"/> -->
 <img src="src/assets/img/terraform.svg" width="20%"/> <br>
+
+## What is Terraform?
 - Terraform allows you to write infrastructure as code:
   - In other words you can either go into the web console and you can just start launching some new instances manually
   - or you can do that in code, using Terraform.
@@ -15,4 +15,13 @@ Use Terraform to provision infrastructure on AWS
  ## Installation  
   Step 1. Go to: https://www.terraform.io/ <br>
   Step 2. Download zip file for your operating system & install
+          (For linux)
+          - ```$ mkdir Terraform```
+          - ```$ cd Terraform```
+          - ```$ git clone https://github.com/wardviaene/devops-box.git``` (this will have things to install Ansible & Terraform)
+          - ```$ cd devops-box/```
+          - ```$ cd scripts```
+          - ```$ chmod u+x install.sh```
+          - ```$ ./install.sh```
+          
 
