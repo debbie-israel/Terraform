@@ -1,5 +1,6 @@
 # Terraform
 Use Terraform to provision infrastructure on AWS
+<img src="src/assets/img/terraform.png" width="30%"/>
 
 ## What is Terraform?
 - Terraform allows you to write infrastructure as code:
