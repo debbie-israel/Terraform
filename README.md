@@ -23,7 +23,7 @@ Use Terraform to provision infrastructure on AWS
 ```$ cd scripts```<br>
 ```$ chmod u+x install.sh``` (add required permissions)<br>
 ```$ sudo ./install.sh```<br>
- Step 4. Check wether it's installed correctly: <br>
+ Step 4. Check wether it's installed correctly:
 ```$ terraform version``` <br>
 
 ## Terraform HCL
