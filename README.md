@@ -48,8 +48,8 @@ variable "mymap"{
 ```
 <br><br>
 ```$ terraform console```<br>
-```> var.myvar``` (it'll print "hello terraform")<br> 
-```> var.mymap``` (it'll print tomap({"mykey" = "my value"}))<br> 
+```> var.myvar``` (it'll print ```"hello terraform"```)<br> 
+```> var.mymap``` (it'll print ```tomap({"mykey" = "my value"})```)<br> 
 
 
 
