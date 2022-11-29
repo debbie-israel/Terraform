@@ -53,10 +53,11 @@ variable "mylist"{
 ```
 <br><br>
 ```$ terraform console```<br>
-```> var.myvar``` (it'll print ```"hello terraform"```)<br> 
-```> var.mymap``` (it'll print ```tomap({"mykey" = "my value"})```)<br> 
-```> var.mymap["mykey"]``` (it'll print ```"my value"```)<br> 
-```> var.mylist``` (it'll print ```tolist([1,2,3,])```)<br> 
+```> var.myvar```           (output: ```"hello terraform"```)<br> 
+```> var.mymap```           (output: ```tomap({"mykey" = "my value"})```)<br> 
+```> var.mymap["mykey"]```  (output: ```"my value"```)<br> 
+```> var.mylist```          (output: ```tolist([1,2,3,])```)<br> 
+```> var.mylist[0]```       (output: ```1```)<br> 
 
 
 
