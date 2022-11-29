@@ -37,7 +37,7 @@ variable "myvar"{
   default="hello terraform"
 }
 ```
-<br><br>
+<hr>
 ```$ terraform console```<br>
 ```> var.myvar``` (it'll print "hello terraform")<br> 
 
