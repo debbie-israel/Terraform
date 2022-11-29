@@ -36,7 +36,8 @@ variable "myvar"{
   type="string"
   default="hello terraform"
 }
-```<br>
+```
+<br>
 ```$ nano main.tf ```<br>
 
           
