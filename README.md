@@ -2,7 +2,8 @@
 Use Terraform to provision infrastructure on AWS
 
 ## What is Terraform?
-<img src="src/assets/img/terraform.svg" width="30%"/><br>
+<img src="src/assets/img/terraform.svg" width="30%"/>
+<img src="src/assets/img/terraform-registry.gif" width="30%"/><br>
 - Terraform allows you to write infrastructure as code:
   - In other words you can either go into the web console and you can just start launching some new instances manually
   - or you can do that in code, using Terraform.
