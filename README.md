@@ -18,7 +18,7 @@ Use Terraform to provision infrastructure on AWS
   Step 3. Install, for linux: <br>
 ```$ mkdir Terraform```<br>
 ```$ cd Terraform```<br>
-```$ git clone https://github.com/wardviaene/devops-box.git``` (this will have things to install Ansible & Terraform)<br>
+```$ git clone https://github.com/wardviaene/devops-box.git``` (this will have things to install like Ansible & Terraform)<br>
 ```$ cd devops-box/```<br>
 ```$ cd scripts```<br>
 ```$ chmod u+x install.sh``` (add required permissions)<br>
