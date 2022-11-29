@@ -4,8 +4,8 @@ variable "myvar"{
 }
 
 variable "mymap"{
-  type=map[string]
-  default={
+  type = map(string)
+  default = {
     mykey = "my value"
 }
-
+}
