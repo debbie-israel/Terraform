@@ -38,7 +38,7 @@ variable "myvar"{
 }
 ```
 <br>
-```$ nano main.tf ```<br>
+
 
           
 
