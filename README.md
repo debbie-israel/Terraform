@@ -39,6 +39,7 @@ variable "myvar"{
 ```
 <br><br>
 ```$ terraform console```<br>
+```> var.myvar```<br>
 
 
           
