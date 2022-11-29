@@ -43,6 +43,19 @@ variable "myvar"{
 ```$ terraform console```<br>
 ```> var.myvar``` (it'll print "hello terraform")<br> 
 
+```
+variable "myvar"{
+  type=string
+  default="hello terraform"
+}
+
+variable "mymap"{
+  type=map[string]
+  default={
+    mykey = "my value"
+}
+```
+<br><br>
 
           
 
