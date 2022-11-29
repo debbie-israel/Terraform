@@ -1,9 +1,8 @@
-# Terraform
-
-<img src="src/assets/img/terraform.png" width="30%"/><br>
+# :computer: Terraform
 Use Terraform to provision infrastructure on AWS
 
 ## What is Terraform?
+<img src="src/assets/img/terraform.png" width="30%"/><br>
 - Terraform allows you to write infrastructure as code:
   - In other words you can either go into the web console and you can just start launching some new instances manually
   - or you can do that in code, using Terraform.
