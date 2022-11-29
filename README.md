@@ -23,9 +23,21 @@ Use Terraform to provision infrastructure on AWS
     *  ```$ cd scripts```<br>
     * ```$ chmod u+x install.sh```(to add permissions)<br>
     * ```$ sudo ./install.sh```<br>
-    * ```$ terraform```(to check wether it is installed correctly)<br>
+    * ```$ terraform version```(to check wether it is installed correctly)<br>
 
 ## Terraform HCL
-HashiCorp Confiuration Language - Understanding the terraform syntax
+HashiCorp Confiuration Language - Understanding the terraform syntax<br>
+```$ mkdir terraform-test```<br>
+```$ cd terraform-test```<br>
+```$ touch main.tf ```<br>
+```$ nano main.tf ```<br>
+```
+variable "myvar"{
+  type="string"
+  default="hello terraform"
+}
+```<br>
+```$ nano main.tf ```<br>
+
           
 
