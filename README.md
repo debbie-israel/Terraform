@@ -15,15 +15,15 @@ Use Terraform to provision infrastructure on AWS
  ## Installation  
   Step 1. Go to: https://www.terraform.io/ <br>
   Step 2. Download zip file for your operating system & install<br>
-  * For linux:<br>
-    * ```$ mkdir Terraform```<br>
-    * ```$ cd Terraform```<br>
-    * ```$ git clone https://github.com/wardviaene/devops-box.git``` (this will have things to install Ansible & Terraform)<br>
-    * ```$ cd devops-box/```<br>
-    *  ```$ cd scripts```<br>
-    * ```$ chmod u+x install.sh``` (to add permissions)<br>
-    * ```$ sudo ./install.sh```<br>
-    * ```$ terraform version``` (to check wether it is installed correctly)<br>
+For linux:<br>
+```$ mkdir Terraform```<br>
+```$ cd Terraform```<br>
+```$ git clone https://github.com/wardviaene/devops-box.git``` (this will have things to install Ansible & Terraform)<br>
+```$ cd devops-box/```<br>
+```$ cd scripts```<br>
+```$ chmod u+x install.sh``` (to add permissions)<br>
+```$ sudo ./install.sh```<br>
+```$ terraform version``` (to check wether it is installed correctly)<br>
 
 ## Terraform HCL
 HashiCorp Confiuration Language - Understanding the terraform syntax<br>
