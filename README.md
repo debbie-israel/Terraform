@@ -33,14 +33,13 @@ HashiCorp Confiuration Language - Understanding the terraform syntax<br>
 ```$ nano main.tf ```<br>
 ```
 variable "myvar"{
-  type="string"
+  type=string
   default="hello terraform"
 }
 ```
 <br><br>
 ```$ terraform console```<br>
 ```> var.myvar``` (it'll print hello terraform)<br> 
-```> ${var.myvar}``` (it'll print hello terraform)<br>
 
 
           
