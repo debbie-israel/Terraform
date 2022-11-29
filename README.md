@@ -1,5 +1,5 @@
 # Terraform
-Use Terraform to provision infrastructure on AWS
+Use Terraform to provision infrastructure on AWS<br>
 <img src="src/assets/img/terraform.png" width="30%"/>
 
 ## What is Terraform?
