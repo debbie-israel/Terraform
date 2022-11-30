@@ -113,7 +113,7 @@ Initialize backend & provider plugins * ```$ terraform init```<br>
   * Check the region you're located in
 Steps:
 Go to: https://cloud-images.ubuntu.com/locator/ec2/ & search eu-west-1 xenial, copy the AMI-ID of the first hvm:ebs-ssd instance type you see, for example: ami-0f29c8402f8cce65c<br>
-```$ mkdir run-instance```<br> 
+```$ mkdir new-instance```<br> 
 ```$ vim instance.tf```<br>
 ```
 provider "aws" {
