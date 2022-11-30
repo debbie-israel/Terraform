@@ -234,6 +234,8 @@ After executing ```$ terraform init``` and ```$ terraform apply``` the ec2 insta
 
 ## File uploads
 
+* To upload a file the provisioner ```file``` is included<br>
+* To execute the script the provisioner ```remote-exec``` is included<br>
 instance.tf:
 ```
 resource "aws_key_pair" "mykey"{
@@ -269,8 +271,6 @@ connection {
 * To override SSH defaults, SSH keypairs are added:
   * The public key is the one you will upload to AWS<br>
   * The private key is the one you will use to log in over SSH to this EC2 instance and upload this script.sh.<br>
-* To upload the script the provisioner ```file``` is included<br>
-* To execute the script the provisioner ```remote-exec``` is included<br>
 
 
 vars.tf: 
