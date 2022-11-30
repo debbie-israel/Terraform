@@ -2,10 +2,10 @@
 Use Terraform to provision infrastructure on AWS
 <!--<img src="src/assets/img/terraform-registry.gif" width="44%"/> -->
 <img src="src/assets/img/terraform.svg" width="20%"/> <br>
-1. [What is Terraform?](#What is Terraform?)
+1. [What is Terraform?](#What-is-Terraform?)
 2. [Installation](#Installation)
-3. [Terraform HCL](#Terraform HCL)
-4. [HCL w AWS](#HCL w AWS)
+3. [Terraform HCL](#Terraform-HCL)
+4. [HCL w AWS](#HCL-w-AWS)
 
 ## What is Terraform?
 - Terraform allows you to write infrastructure as code:
