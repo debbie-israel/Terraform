@@ -272,7 +272,7 @@ connection {
   * The public key is the one you will upload to AWS<br>
   * The private key is the one you will use to log in over SSH to this EC2 instance and upload this script.sh.<br>
 
-Consecuently vars.tf changes:
+Consecuently vars.tf has 3 more variables:
 ```
 variable "AWS_ACCESS_KEY"{}
 variable "AWS_SECRET_KEY"{}
@@ -303,6 +303,8 @@ variable "INSTANCE_USERNAME"{
 
 Key pair can be created easily in shell: <br>
 ```$ ssh-keygen -f mykey```
+![image](https://user-images.githubusercontent.com/56561804/204865898-e60432e1-c455-4a41-920c-8fe7276527ff.png)
+
 
 
 
