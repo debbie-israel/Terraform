@@ -257,8 +257,8 @@ resource "aws_instance" "example" {
 }
 
 provisioner "file" {
-  source      = "app.config"
-  destination = "/etc/myapp.conf"
+  source      = "script.sh"
+  destination = "/opt/script.sh"
   connection {
     user = var.instance_username
     password = var.instance_password
@@ -266,6 +266,9 @@ provisioner "file" {
 }
 ```
 
+
+The public key is the one you will upload to AWS
+The private key is the one you will use to log in over SSH to this EC2 instance and upload this script.sh
 
 
 
