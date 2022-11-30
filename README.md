@@ -78,12 +78,14 @@ resource "aws_instance" "example"{
   instance_type = "t2.micro"
 }
 ```
-<br><br>
+<br>
+
 ```$ touch terraform.tfvars```<br> 
 ```
 AWS_REGION="eu-west-1"
 ```
-<br><br>
+<br>
+
 Initialize provider plugins ```$ terraform init```<br> 
 
 
