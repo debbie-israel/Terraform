@@ -267,8 +267,29 @@ provisioner "file" {
 ```
 
 
-The public key is the one you will upload to AWS
-The private key is the one you will use to log in over SSH to this EC2 instance and upload this script.sh
+* The public key is the one you will upload to AWS<br>
+* The private key is the one you will use to log in over SSH to this EC2 instance and upload this script.sh.<br>
+To execute the script:<br>
+```
+
+resource "aws_instance" "example" {
+  ami           = lookup(var.AMIS, var.AWS_REGION)
+  instance_type = "t2.micro"
+}
+
+provisioner "remote-exec"{
+  inline = [
+    "chmod +x /opt/script.sh", 
+    "/opt/script.sh arguments" 
+  ]
+}
+
+provisioner "file" {
+  source      = "script.sh"
+  destination = "/opt/script.sh"
+}
+
+``` 
 
 
 
