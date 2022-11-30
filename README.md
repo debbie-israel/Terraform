@@ -107,11 +107,31 @@ Initialize backend & provider plugins * ```$ terraform init```<br>
 
 ## Add a running instance in AWS
 * Prerequisites:
-  * Have created an AWS account
-  ![image](https://user-images.githubusercontent.com/56561804/204786310-2936cbd2-0c2c-4a28-bcc4-765b103fba58.png)
- 
-  * Log in into AWS account
-  * Create user with admin role
+  * Sign-on AWS: https://aws.amazon.com/ 
+  * Log-in AWS
+  * Create user with admin role: IAM > Users > Add users: with Programmatic access, Add user to group > save .csv with access key + secret key
+Steps:
+Go to: https://cloud-images.ubuntu.com/locator/ec2/ & search eu-west-1 xenial, copy the AMI-ID of the first hvm:ebs-ssd instance type you see, for example: ami-0f29c8402f8cce65c
+```$ mkdir run-instance```<br> 
+```$ vim instance.tf```<br>
+```
+provider "aws" {
+  access_key = "YOUR ACCESS KEY HERE"
+  secret_key = "YOUR SECRET KEY HERE"
+  region     = "eu-west-1"
+}
+
+resource "aws_instance" "example" {
+  ami           = "ami-0f29c8402f8cce65c"
+  instance_type = "t3.micro"
+}
+```
+
+```$ terraform init```<br> 
+```$ terraform apply```<br> 
+Goto AWS Console > EC2 > Instances. You'll see a new instance is running!
+
+
 
 
 
