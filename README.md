@@ -8,8 +8,6 @@ Use Terraform to provision infrastructure on AWS
 4. [HCL w AWS](#HCL-w-AWS)
 5. [Add a running instance in AWS](#Add-a-running-instance-in-AWS)
 
-Add a running instance in AWS
-
 ## What is Terraform?
 - Terraform allows you to write infrastructure as code:
   - In other words you can either go into the web console and you can just start launching some new instances manually
