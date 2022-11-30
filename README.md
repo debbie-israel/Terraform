@@ -59,6 +59,33 @@ variable "mylist"{
 ```> var.mylist```            (output: ```tolist([1,2,3,])```)<br> 
 ```> var.mylist[0]```         (output: ```1```)<br> 
 ```> element(var.mylist,0)``` (output: ```1```)<br> 
+Ctrl+D
+
+## HCL w AWS
+
+```$ touch resource.tf```<br> 
+```
+provider "aws"{
+
+}
+
+variable "AWS_REGION"{
+  type  = string
+}
+
+resource "aws_instance" "example"{
+  ami           = var.AMIS[var.REGION]
+  instance_type = "t2.micro"
+}
+```
+<br><br>
+```$ touch terraform.tfvars```<br> 
+```
+AWS_REGION="eu-west-1"
+```
+<br><br>
+Initialize provider plugins ```$ terraform init```<br> 
+
 
 
 
