@@ -236,6 +236,8 @@ After executing ```$ terraform init``` and ```$ terraform apply``` the ec2 insta
 
 You can upload a file if you change the instance.tf, adding:
 ```
+
+resource "aws "
 provisioner "file" {
   source      = "app.config"
   destination = "/etc/myapp.conf"
