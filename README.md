@@ -187,6 +187,49 @@ However, there's a shortcut you can use:<br>
 which does, simultaneously: <br> 
 ```$ terraform plan -out file; terraform apply file; rm file```<br> 
 
+This can be modularized in different files:
+
+* instance.tf
+```
+resource "aws_instance" "example" {
+  ami           = lookup(var.AMIS, var.AWS_REGION)
+  instance_type = "t2.micro"
+}
+```
+
+
+* provider.tf
+```
+provider "aws"{
+  access_key = var.AWS_ACCESS_KEY
+  secret_key = var.AWS_SECRET_KEY
+  region = var.AWS_REGION
+}
+```
+
+* vars.tf
+```
+variable "AWS_ACCESS_KEY"{}
+variable "AWS_SECRET_KEY"{}
+variable "AWS_REGION"{
+  default = "eu-west-1"
+}
+
+variable "AMIS"{
+  type = map
+  default = {
+    eu-west-1 = "ami-0f29c8402f8cce65c"
+  }
+}
+```
+
+* terraform.tfvars
+```
+AWS_ACCESS_KEY=""
+AWS_SECRET_KEY=""
+```
+
+
 
 
 
