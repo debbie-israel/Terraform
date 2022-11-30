@@ -96,7 +96,7 @@ You can let terraform infer the type omitting the type line like:
 variable "mystring"{
   default="hello terraform"
 }
-
+```
 
 ```$ terraform console```<br>
 ```> var.myvar```             (output: ```"hello terraform"```)<br> 
