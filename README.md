@@ -231,6 +231,16 @@ AWS_SECRET_KEY=""
 
 After executing ```$ terraform init``` and ```$ terraform apply``` the ec2 instance will be running in AWS & 2 files will be generated into the shell: ```terraform.tfstate``` & ```terraform.tfstate.backup``` .
 
+## File uploads
+
+You can upload a file if you change the instance.tf, adding:
+```
+provisioner "file" {
+  source      = "app.config"
+  destination = "/etc/myapp.conf"
+}
+```
+
 
 
 
