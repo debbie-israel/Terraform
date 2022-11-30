@@ -92,6 +92,8 @@ AWS_REGION="eu-west-1"
 
 
 Initialize provider plugins ```$ terraform init```<br> 
+```$ terraform console```<br> 
+```> var.AWS_REGION```<br> 
 
 
 
