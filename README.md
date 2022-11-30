@@ -229,6 +229,7 @@ AWS_ACCESS_KEY=""
 AWS_SECRET_KEY=""
 ```
 
+After executing ```$ terraform init``` and ```$ terraform apply``` the ec2 instance will be running in AWS & 2 files will be generated into the shell: ```terraform.tfstate``` & ```terraform.tfstate.backup```
 
 
 
