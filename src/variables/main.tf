@@ -14,3 +14,13 @@ variable "mylist"{
   type = list
   default = [1,2,3]
 }
+
+variable "a-number"{
+  type = number
+  default = 3874
+}
+
+variable "a-boolean"{
+  type = bool
+  default = true
+}
