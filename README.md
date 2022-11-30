@@ -138,7 +138,8 @@ You can save the changes that terraform plans to change into the infrastructure 
 ```$ terraform plan -out file```<br> 
 followed by:<br> 
 ```$ terraform plan file```<br> 
-It is a much safer way because the file contains the changes terraform plans to do into the infrastructure.<br>
+It is a much safer way because the file contains the changes terraform plans to do into the infrastructure and therefore you'll be always sure
+that the changes that you just have seen on your shell will be the change that will be applied on your infrastructure<br>
 However, there's a shortcut you can use:<br> 
 ```$ terraform apply```<br> 
 which does, simultaneously: <br> 
