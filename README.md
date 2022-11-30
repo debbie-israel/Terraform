@@ -98,10 +98,12 @@ AWS_REGION="eu-west-1"
 ```
 
 
-Initialize backend & provider plugins ```$ terraform init```<br> 
+Initialize backend & provider plugins * ```$ terraform init```<br> 
 ```$ terraform console```<br> 
 ```> var.AWS_REGION```<br> 
 ```> var.AMIS[var.AWS_REGION]```<br>
+
+(\*) This should be done everytime you create a new directory
 
 
 
