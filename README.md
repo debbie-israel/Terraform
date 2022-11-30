@@ -187,7 +187,7 @@ However, there's a shortcut you can use:<br>
 which does, simultaneously: <br> 
 ```$ terraform plan -out file; terraform apply file; rm file```<br> 
 
-This can be modularized in different files:
+This can be modularized with different files:
 
 * instance.tf
 ```
@@ -223,7 +223,7 @@ variable "AMIS"{
 }
 ```
 
-* terraform.tfvars
+* terraform.tfvars(this will be included in .gitignore) for credential security
 ```
 AWS_ACCESS_KEY=""
 AWS_SECRET_KEY=""
