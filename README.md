@@ -105,6 +105,14 @@ Initialize backend & provider plugins * ```$ terraform init```<br>
 
 (\*) This should be done everytime you create a new directory
 
+## Add a running instance in AWS
+* Prerequisites:
+  * Have created an AWS account
+  ![image](https://user-images.githubusercontent.com/56561804/204786310-2936cbd2-0c2c-4a28-bcc4-765b103fba58.png)
+ 
+  * Log in into AWS account
+  * Create user with admin role
+
 
 
 
