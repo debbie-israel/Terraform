@@ -110,6 +110,7 @@ Initialize backend & provider plugins * ```$ terraform init```<br>
   * Sign-on AWS: https://portal.aws.amazon.com/billing/signup?nc2=h_ct&src=header_signup&redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/start/email
   * Log-in AWS: https://aws.amazon.com/ 
   * Create user with admin role: IAM > Users > Add users: with Programmatic access, Add user to group > save .csv with access key + secret key
+  * Check the region you're located in
 Steps:
 Go to: https://cloud-images.ubuntu.com/locator/ec2/ & search eu-west-1 xenial, copy the AMI-ID of the first hvm:ebs-ssd instance type you see, for example: ami-0f29c8402f8cce65c<br>
 ```$ mkdir run-instance```<br> 
@@ -118,7 +119,7 @@ Go to: https://cloud-images.ubuntu.com/locator/ec2/ & search eu-west-1 xenial, c
 provider "aws" {
   access_key = "YOUR ACCESS KEY HERE"
   secret_key = "YOUR SECRET KEY HERE"
-  region     = "eu-west-1"
+  region     = "REGION YOU'RE LOCATED IN"
 }
 
 resource "aws_instance" "example" {
