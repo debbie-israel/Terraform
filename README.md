@@ -111,7 +111,7 @@ Initialize backend & provider plugins * ```$ terraform init```<br>
   * Log-in AWS
   * Create user with admin role: IAM > Users > Add users: with Programmatic access, Add user to group > save .csv with access key + secret key
 Steps:
-Go to: https://cloud-images.ubuntu.com/locator/ec2/ & search eu-west-1 xenial, copy the AMI-ID of the first hvm:ebs-ssd instance type you see, for example: ami-0f29c8402f8cce65c
+Go to: https://cloud-images.ubuntu.com/locator/ec2/ & search eu-west-1 xenial, copy the AMI-ID of the first hvm:ebs-ssd instance type you see, for example: ami-0f29c8402f8cce65c<br>
 ```$ mkdir run-instance```<br> 
 ```$ vim instance.tf```<br>
 ```
