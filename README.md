@@ -234,44 +234,8 @@ After executing ```$ terraform init``` and ```$ terraform apply``` the ec2 insta
 
 ## File uploads
 
-You can upload a file if you change the instance.tf, adding:
-``` 
-provisioner "file" {
-  source      = "app.config"
-  destination = "/etc/myapp.conf"
-}
+instance.tf:
 ```
-
-
-To override SSH defaults, add SSH keypairs:
-```
-resource "aws_key_pair" "edward-key"{
-  key_name = "mykey"
-  public_key = "ssh-rsa-my-public-key"
-}
-
-resource "aws_instance" "example" {
-  ami           = lookup(var.AMIS, var.AWS_REGION)
-  instance_type = "t2.micro"
-  key_name = aws_key_pair.my_key.key_name
-}
-
-provisioner "file" {
-  source      = "script.sh"
-  destination = "/opt/script.sh"
-  connection {
-    user = var.instance_username
-    password = var.instance_password
-  }
-}
-```
-
-
-* The public key is the one you will upload to AWS<br>
-* The private key is the one you will use to log in over SSH to this EC2 instance and upload this script.sh.<br>
-To execute the script:<br>
-```
-
 resource "aws_key_pair" "mykey"{
   key_name = "mykey"
   public_key = file(var.PATH_TO_PUBLIC_KEY)
@@ -299,8 +263,52 @@ connection {
     user = var.INSTANCE_USERNAME
     password = file(var.PATH_TO_PRIVATE_KEY)
 }
+```
 
-``` 
+
+* To override SSH defaults, SSH keypairs are added:
+  * The public key is the one you will upload to AWS<br>
+  * The private key is the one you will use to log in over SSH to this EC2 instance and upload this script.sh.<br>
+* To upload the script the provisioner ```file``` is included<br>
+* To execute the script the provisioner ```remote-exec``` is included<br>
+
+
+vars.tf: 
+```
+variable "AWS_ACCESS_KEY"{}
+variable "AWS_SECRET_KEY"{}
+variable "AWS_REGION"{
+  default = "eu-west-1"
+}
+
+variable "AMIS"{
+  type = map
+  default = {
+    eu-west-1 = "ami-0f29c8402f8cce65c"
+  }
+}
+
+variable "PATH_TO_PRIVATE_KEY"{
+  default = "mykey"
+}
+
+variable "PATH_TO_PUBLIC_KEY"{
+  default = "mykey.pub"
+}
+
+variable "INSTANCE_USERNAME"{
+  default = "ubuntu"
+}
+```
+
+
+Key pair can be created easily in shell: <br>
+```$ ssh-keygen -f mykey```
+
+
+
+
+
 
 
 
