@@ -243,6 +243,29 @@ provisioner "file" {
 ```
 
 
+To override SSH defaults, add SSH keypairs:
+```
+resource "aws_key_pair" "edward-key"{
+  key_name = "mykey"
+  public_key = "ssh-rsa-my-public-key"
+}
+
+resource "aws_instance" "example" {
+  ami           = lookup(var.AMIS, var.AWS_REGION)
+  instance_type = "t2.micro"
+  key_name = aws_key_pair.my_key.key_name
+}
+
+provisioner "file" {
+  source      = "app.config"
+  destination = "/etc/myapp.conf"
+  connection {
+    user = var.instance_username
+    password = var.instance_password
+  }
+}
+```
+
 
 
 
