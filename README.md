@@ -305,11 +305,11 @@ Key pair can be easily created in shell:
 ```$ ssh-keygen -f mykey```<br>
 ![image](https://user-images.githubusercontent.com/56561804/204865898-e60432e1-c455-4a41-920c-8fe7276527ff.png)
 
-Now we need to open SSH with security groups.
-Security are like firewalls, & WE want to allow access for our IP.
-AWS Console > VPC > Security groups > default > Inbound rules > Edit > Add rule: ALL TCP , Source: my-ip-address
-Now this rule will us (our IP addess) access to all ports over TCP.
-You can launch the instance now with : ``` $ terraform apply ```
+Now we need to open SSH with security groups.<br>
+Security are like firewalls, & WE want to allow access for our IP.<br>
+AWS Console > VPC > Security groups > default > Inbound rules > Edit > Add rule: ALL TCP , Source: my-ip-address.<br>
+Now this rule will us (our IP addess) access to all ports over TCP.<br>
+You can launch the instance now with : ``` $ terraform apply ```.
 
 
 
