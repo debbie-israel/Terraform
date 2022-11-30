@@ -98,6 +98,7 @@ variable "mystring"{
 }
 ```
 
+To check variables' output run:<br>
 ```$ terraform console```<br>
 ```> var.myvar```             (output: ```"hello terraform"```)<br> 
 ```> var.mymap```             (output: ```tomap({"mykey" = "my value"})```)<br> 
