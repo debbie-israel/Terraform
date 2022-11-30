@@ -187,7 +187,7 @@ However, there's a shortcut you can use:<br>
 which does, simultaneously: <br> 
 ```$ terraform plan -out file; terraform apply file; rm file```<br> 
 
-This can be modularized with different files:
+This can be modularized separating the code into different files:
 
 * instance.tf
 ```
