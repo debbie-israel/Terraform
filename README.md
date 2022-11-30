@@ -67,7 +67,7 @@ variable "mylist"{
 Ctrl+D
 
 ## HCL w AWS
-
+Here we'll see how a .tf looks like with AWS as the provider & with resources as well as with variables:
 ```$ touch resource.tf```<br> 
 ```
 provider "aws"{
