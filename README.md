@@ -130,7 +130,7 @@ resource "aws_instance" "example" {
 
 ```$ terraform init```<br> 
 ```$ terraform apply```<br> 
-Goto AWS Console > EC2 > Instances. You'll see a new instance is running!
+Goto AWS Console > EC2 > Instances. You'll see a new instance is running!<br> 
 Now destroy it so that you don't have to pay for it: ```$ terraform destroy```<br> 
 
 
