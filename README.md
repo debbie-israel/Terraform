@@ -272,7 +272,7 @@ provisioner "file" {
 To execute the script:<br>
 ```
 
-resource "aws_key_pair" "edward-key"{
+resource "aws_key_pair" "mykey"{
   key_name = "mykey"
   public_key = file(var.PATH_TO_PUBLIC_KEY)
 }
