@@ -308,6 +308,7 @@ Key pair can be easily created in shell:
 Now we need to open SSH with security groups.<br>
 Security are like firewalls, & WE want to allow access for our IP.<br>
 AWS Console > VPC > Security groups > default > Inbound rules > Edit > Add rule: ALL TCP , Source: my-ip-address.<br>
+![image](https://user-images.githubusercontent.com/56561804/204869454-9206bbcd-60dd-4e8a-b517-403fa46fb684.png)
 Now this rule will allow us (our IP addess) access to all ports over TCP.<br>
 You can launch the instance now with : ``` $ terraform apply ```.
 
