@@ -133,6 +133,17 @@ resource "aws_instance" "example" {
 Goto AWS Console > EC2 > Instances. You'll see a new instance is running!<br> 
 Now destroy it so that you don't have to pay for it: ```$ terraform destroy```<br> 
 The instance will be terminated:![image](https://user-images.githubusercontent.com/56561804/204793855-5f9c1863-bf85-4302-9a70-8df12d5729da.png)
+If you want to have a looka t your terraform file run ```$ terraform plan``` and it'll show you what terraform is planning to do.
+You can save the changes that terraform plans to change into the infrastructure with:<br> 
+```$ terraform plan -out file```<br> 
+followed by:<br> 
+```$ terraform plan file```<br> 
+It is a much safer way because the file contains the changes terraform plans to do into the infrastructure
+However, there's a shortcut you can use:<br> 
+```$ terraform apply```<br> 
+which does, simultaneously: <br> 
+```$ terraform plan -out file; terraform apply file; rm file```<br> 
+
 
 
 
