@@ -36,8 +36,7 @@ HashiCorp Confiuration Language - Understanding the terraform syntax<br>
 We'll create & run our first ```.tf``` easily w the following not-so-many commands:<br>
 ```$ mkdir terraform-test```<br>
 ```$ cd terraform-test```<br>
-```$ touch main.tf ```<br>
-```$ nano main.tf ```<br>
+```$ vim main.tf ```<br>
 ```
 variable "myvar"{
   type=string
@@ -69,7 +68,7 @@ Ctrl+D
 
 ## HCL w AWS
 Here we'll see how a ```.tf``` looks like with AWS as the provider & with resources as well as with variables:<br>
-```$ touch resource.tf```<br> 
+```$ vim resource.tf```<br> 
 ```
 provider "aws"{
 
@@ -93,7 +92,7 @@ resource "aws_instance" "example"{
 ```
 
 
-```$ touch terraform.tfvars```<br> 
+```$ vim terraform.tfvars```<br> 
 ```
 AWS_REGION="eu-west-1"
 ```
