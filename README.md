@@ -51,7 +51,8 @@ variable "mylist"{
   default = [1,2,3]
 }
 ```
-<br><br>
+
+
 ```$ terraform console```<br>
 ```> var.myvar```             (output: ```"hello terraform"```)<br> 
 ```> var.mymap```             (output: ```tomap({"mykey" = "my value"})```)<br> 
