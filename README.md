@@ -301,8 +301,8 @@ variable "INSTANCE_USERNAME"{
 ```
 
 
-Key pair can be created easily in shell: <br>
-```$ ssh-keygen -f mykey```
+Key pair can be created easily in shell: 
+```$ ssh-keygen -f mykey```<br>
 ![image](https://user-images.githubusercontent.com/56561804/204865898-e60432e1-c455-4a41-920c-8fe7276527ff.png)
 
 
