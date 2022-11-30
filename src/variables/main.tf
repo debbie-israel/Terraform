@@ -10,6 +10,15 @@ variable "mymap"{
   }
 }
 
+# an object is like a map but each element can have a different type
+variable "myobject"{
+  type = map(string)
+  default = {
+    firstname = "Bob"
+    housenumber = 10
+  }
+}
+
 # A list is always ordered, it'll always return 1,2,3 and not 3,2,1 
 # despite the order of insertion
 variable "mylist"{
@@ -22,6 +31,12 @@ variable "mylist"{
 variable "myset"{
   type = set
   default = [1,2,3]
+}
+
+# A tuple is like a list but each element can have a different type
+variable "mytuple"{
+  type = tuple
+  default = [0,"string",false]
 }
 
 variable "mynumber"{
